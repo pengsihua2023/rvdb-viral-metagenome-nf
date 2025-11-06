@@ -1,4 +1,4 @@
-# Dual-Track Metagenome Workflow for Viral Detection and Classification
+# viral-dualtrack-nf: Dual-Track Metagenome Workflow for Viral Detection and Classification
 
 ## Project Overview
 
@@ -1326,5 +1326,6 @@ project_root/
 ├── results_long/
 └── work/  (Nextflow working directory)
 ```
+
 
 
