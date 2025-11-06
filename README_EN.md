@@ -5,7 +5,7 @@
 This is a Nextflow-based metagenome workflow featuring **dual-track complementary viral identification** through viralFlye (feature-based) and Diamond (sequence similarity-based) methods. Specifically optimized for **comprehensive viral detection and classification** with support for both short-read (Illumina) and long-read (Nanopore/PacBio) data types.
 
 **Version**: 4.1.1  
-**Author**: Assistant  
+**Author**: Sihua Peng  
 **Last Updated**: 2025-11-06
 
 ---
@@ -1326,6 +1326,7 @@ project_root/
 ├── results_long/
 └── work/  (Nextflow working directory)
 ```
+
 
 
 
