@@ -1001,10 +1001,10 @@ ls results_long/consensus_analysis/
 
 ### Contact
 
-- 📧 Email: Sihua.peng@uga.edu, Workflow code writer
-  📧 Email: justin.bahl@uga.edu, Project supervisor
-- 💻 GitHub: https://github.com/pengsihua2023/rvdb-viral-metagenome-nf
-- [Issue](https://github.com/pengsihua2023/rvdb-viral-metagenome-nf/issues/new)
+- 📧 Email: Sihua.peng@uga.edu, Workflow code writer  
+- 📧 Email: justin.bahl@uga.edu, Project supervisor  
+- 💻 GitHub: https://github.com/pengsihua2023/rvdb-viral-metagenome-nf  
+- 💻 Suggestion: [Click here!](https://github.com/pengsihua2023/rvdb-viral-metagenome-nf/issues/new)
 ### Getting Started
 
 1. Read **README_EN.md** for detailed instructions
@@ -1081,6 +1081,7 @@ sample1,/path/reads.fq.gz
 ---
 
 **End of Presentation**
+
 
 
 
