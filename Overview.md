@@ -514,16 +514,16 @@ nextflow run workflow.nf -resume
 ### Time and Resource Consumption
 
 **Single-track** (MetaFlye + Diamond only):
-- Assembly: ~20 hours
+- Assembly: ~1 hours
 - Classification: ~10 minutes
-- **Total: ~20 hours**
+- **Total: ~1 hours**
 
 **Dual-track** (MetaFlye + viralFlye + Consensus):
-- Assembly: ~20 hours (shared)
+- Assembly: ~2 hours (shared)
 - viralFlye: ~3 minutes
 - Dual classification: ~16 minutes
 - Consensus analysis: ~20 seconds
-- **Total: ~20.3 hours**
+- **Total: ~2 hours**
 
 **Added cost**: +0.3 hours (+1.5%)  
 **Added value**: +528 viral candidates (+292% coverage)
@@ -1081,6 +1081,7 @@ sample1,/path/reads.fq.gz
 ---
 
 **End of Presentation**
+
 
 
 
