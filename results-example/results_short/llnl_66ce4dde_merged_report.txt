@@ -1,0 +1,114 @@
+================================================================================
+Diamond Comprehensive Analysis Report - MEGAHIT vs SPAdes Assembly Comparison
+================================================================================
+
+[Overall Statistics]
+--------------------------------------------------------------------------------
+SPAdes total hits:          51,835
+MEGAHIT total hits:         16,323
+
+SPAdes unique queries:      51,835
+MEGAHIT unique queries:     16,323
+
+SPAdes average identity:    41.56%
+MEGAHIT average identity:   34.40%
+
+SPAdes average length:      96.2 aa
+MEGAHIT average length:     212.7 aa
+
+
+[Phylum Level Comparison (Top 15)]
+--------------------------------------------------------------------------------
+Phylum                         SPAdes Count    MEGAHIT Count   Total          
+--------------------------------------------------------------------------------
+Nucleocytoviricota             35680           11198           46878          
+N/A                            10855           3447            14302          
+Streptophyta                   1697            526             2223           
+Peploviricota                  530             219             749            
+Lenarviricota                  537             168             705            
+Ascomycota                     550             140             690            
+Chordata                       481             76              557            
+Pisuviricota                   331             115             446            
+Kitrinoviricota                239             77              316            
+Rotifera                       206             88              294            
+Uroviricota                    197             79              276            
+Arthropoda                     175             50              225            
+Duplornaviricota               99              59              158            
+Pseudomonadota                 121             28              149            
+Platyhelminthes                67              18              85             
+
+[Family Level Comparison (Top 15)]
+--------------------------------------------------------------------------------
+Family                         SPAdes Count    MEGAHIT Count   Total          
+--------------------------------------------------------------------------------
+Mimiviridae                    18133           5496            23629          
+N/A                            11276           3591            14867          
+Phycodnaviridae                6092            1907            7999           
+Marseilleviridae               3652            1263            4915           
+Schizomimiviridae              2246            789             3035           
+Allomimiviridae                1674            402             2076           
+Poxviridae                     1427            608             2035           
+Poaceae                        965             316             1281           
+Iridoviridae                   844             219             1063           
+Orpheoviridae                  613             178             791            
+Orthoherpesviridae             457             196             653            
+Fabaceae                       435             132             567            
+Mamonoviridae                  368             111             479            
+Ascoviridae                    285             125             410            
+Mitoviridae                    257             88              345            
+
+[Taxonomic ID Comparison (Top 20)]
+--------------------------------------------------------------------------------
+Taxonomic ID         SPAdes Count    MEGAHIT Count  
+--------------------------------------------------------------------------------
+1737588              2914            789            
+3070911              2096            714            
+2596887              2059            692            
+2487770              1439            492            
+2487775              1341            412            
+2487769              1243            269            
+2506605              1161            317            
+1977640              1132            298            
+2487765              1034            348            
+2506606              948             376            
+62099                896             405            
+2506604              914             331            
+2809302              893             264            
+1977631              842             232            
+455367               862             169            
+2487768              705             299            
+2763269              739             203            
+3240092              673             243            
+2506594              659             140            
+2023057              613             178            
+
+[Unique Findings]
+--------------------------------------------------------------------------------
+
+Taxonomic IDs found only in SPAdes: 213
+  - 160691: 19 matches
+  - 256729: 7 matches
+  - 1128424: 7 matches
+  - 176652: 7 matches
+  - 946522: 7 matches
+  - 2935083: 7 matches
+  - 1884660: 6 matches
+  - 176656: 5 matches
+  - 263891: 5 matches
+  - 2605775: 5 matches
+
+Taxonomic IDs found only in MEGAHIT: 36
+  - 208013: 3 matches
+  - 36381: 3 matches
+  - 2057187: 2 matches
+  - 70600: 2 matches
+  - 3138846: 2 matches
+  - 1920699: 2 matches
+  - 224399: 1 matches
+  - 5691: 1 matches
+  - 2501216: 1 matches
+  - 11636: 1 matches
+
+================================================================================
+Analysis Complete
+================================================================================
