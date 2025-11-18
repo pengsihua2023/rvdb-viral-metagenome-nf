@@ -12,7 +12,7 @@ This is a Nextflow-based viral metagenome analysis pipeline using **dual-method 
 
 ## Key Features
 
-### 🧬 Short-Read Workflow (Illumina Paired-end) - Dual-Assembler Comparison
+### Short-Read Workflow (Illumina Paired-end) - Dual-Assembler Comparison
 1. **Quality Control**: fastp automatic adapter removal and quality filtering
 2. **Dual Assembler Parallel**: MEGAHIT + metaSPAdes
 3. **Gene Prediction**: Prodigal (metagenome mode)
@@ -26,7 +26,7 @@ This is a Nextflow-based viral metagenome analysis pipeline using **dual-method 
    - Read counting and normalization
    - Generate abundance reports in both text and CSV formats
 
-### 🦠 Long-Read Workflow (Nanopore/PacBio) - Dual-Track Complementary Analysis
+### Long-Read Workflow (Nanopore/PacBio) - Dual-Track Complementary Analysis
 1. **Metagenome Assembly**: MetaFlye (--meta mode)
 2. **Viral Identification and Filtering**: viralFlye analysis
    - Use Pfam-A HMM and viralVerify to identify viral features
@@ -389,7 +389,7 @@ Cafeteria roenbergensis virus           2059            703             2762
 
 ## Consensus Analysis Result Interpretation (Long-Read Dual-Track)
 
-### 📊 Dual-Track Comparison Report Example
+### Dual-Track Comparison Report Example
 
 ```
 [Contig-Level Comparison]
@@ -401,7 +401,7 @@ MetaFlye-Only Viral Contigs:     528 → Distant viral candidates
 viralFlye-Only Viral Contigs:    0   → Feature-based but sequence-unique
 ```
 
-### 🔍 Meaning of Numbers:
+### Meaning of Numbers:
 
 **Important**: Distinguish between **contig counts** and **protein match counts**
 
@@ -415,7 +415,7 @@ viralFlye-Only Viral Contigs:    0   → Feature-based but sequence-unique
 | MetaFlye-Only | 528 | 965 | Distant viral candidates |
 | viralFlye-Only | 0 | 0 | - |
 
-### 💡 Key Findings:
+### Key Findings:
 
 1. **100% Consensus Rate**:
    - 181 viral contigs identified by viralFlye
@@ -439,7 +439,7 @@ viralFlye-Only Viral Contigs:    0   → Feature-based but sequence-unique
    - Consensus virus gene density is **2.6 times** that of MetaFlye-only
    - Proves viralFlye indeed selects high-quality, complete viral genomes
 
-### 📈 Species Statistics Interpretation
+### Species Statistics Interpretation
 
 ```
 Species Distribution (Top 15):
@@ -463,7 +463,7 @@ Mimiviridae sp. ChoanoV1: 57 proteins
   → This virus has high abundance or good assembly quality in the sample
 ```
 
-### 🎯 Usage Recommendations:
+### Usage Recommendations:
 
 1. **High Confidence Research**: Use `consensus_viruses.txt` (181 contigs, 844 proteins)
    - Confirmed by both methods
@@ -1261,26 +1261,26 @@ Grouped by Species:
 
 ## Contact
 
-- 📧 Email: sihua.peng@uga.edu, Workflow code programmer  
-- 📧 Email: justin.bahl@uga.edu, Project supervisor  
-- 💻 Suggestion: [Click here!](https://github.com/pengsihua2023/rvdb-viral-metagenome-nf/issues/new)
+- Email: sihua.peng@uga.edu, Workflow code programmer  
+- Email: justin.bahl@uga.edu, Project supervisor  
+- Suggestion: [Click here!](https://github.com/pengsihua2023/rvdb-viral-metagenome-nf/issues/new)
 
 ---
 
 ## Update Log
 
 ### v4.2.0 (2025-11-17)
-- ✨ **Viral abundance calculation**: Added RPM and RPKM calculation for identified viral contigs
+- **Viral abundance calculation**: Added RPM and RPKM calculation for identified viral contigs
   - Short reads: BWA alignment of reads to viral contigs, read counting using samtools idxstats
   - Long reads: minimap2 alignment of long reads to viral contigs, direct SAM parsing for read counting
   - Generates abundance reports in both text and CSV formats
   - Merges abundance data with Diamond classification information (taxonomy, identity, etc.)
-- 📊 Abundance reports include: contig ID, contig length, mapped reads, RPM, RPKM, and full taxonomic classification
-- ⚙️ Configurable via `--skip_abundance` parameter (default: false, abundance calculation enabled)
-- 🔧 Resource allocation: 8 CPUs, 16 GB memory, 12 hours time limit per abundance calculation process
+- Abundance reports include: contig ID, contig length, mapped reads, RPM, RPKM, and full taxonomic classification
+- Configurable via `--skip_abundance` parameter (default: false, abundance calculation enabled)
+- Resource allocation: 8 CPUs, 16 GB memory, 12 hours time limit per abundance calculation process
 
 ### v4.1.1 (2025-11-06)
-- 📊 **Enhanced short-read taxonomic comparison**: Added complete 7-level taxonomic comparison in merged reports
+- **Enhanced short-read taxonomic comparison**: Added complete 7-level taxonomic comparison in merged reports
   - Kingdom Level Comparison (Top 15)
   - Phylum Level Comparison (Top 15)
   - Class Level Comparison (Top 15)
@@ -1288,8 +1288,8 @@ Grouped by Species:
   - Family Level Comparison (Top 15)
   - Genus Level Comparison (Top 15)
   - Species Level Comparison (Top 20)
-- 📝 All files converted to pure English (workflow, config, script, and documentation)
-- 📝 Updated workflow title to accurately reflect dual-method approach: dual-assembler comparison (short reads) + dual-track analysis (long reads), with emphasis on RVDB-based classification
+- All files converted to pure English (workflow, config, script, and documentation)
+- Updated workflow title to accurately reflect dual-method approach: dual-assembler comparison (short reads) + dual-track analysis (long reads), with emphasis on RVDB-based classification
 
 ### v4.1.0 (2025-11-05)
 - ✨ **Long-read dual-track analysis**: MetaFlye (all sequences) and viralFlye (viral only) complementary identification
@@ -1361,6 +1361,7 @@ project_root/
 ├── results_long/
 └── work/  (Nextflow working directory)
 ```
+
 
 
 
