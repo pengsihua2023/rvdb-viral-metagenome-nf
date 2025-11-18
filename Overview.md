@@ -13,14 +13,14 @@ Version 4.2.0 | 2025-11-17
 A **comprehensive viral identification workflow** with two analysis modes:
 
 **Short Reads (Illumina)**:
-- 🧬 Dual-assembler comparison: MEGAHIT + SPAdes
-- 📊 7-level taxonomic comparison
-- 📈 Viral abundance calculation: RPM and RPKM
+- Dual-assembler comparison: MEGAHIT + SPAdes
+- 7-level taxonomic comparison
+- Viral abundance calculation: RPM and RPKM
 
 **Long Reads (Nanopore/PacBio)**:
-- 🔍 Dual-track analysis: viralFlye (features) + Diamond (similarity)
-- 🎯 3-tier confidence classification
-- 📈 Viral abundance calculation: RPM and RPKM
+- Dual-track analysis: viralFlye (features) + Diamond (similarity)
+- 3-tier confidence classification
+- Viral abundance calculation: RPM and RPKM
 
 **Key Innovation**: Dual-method approach (dual-assembler for short reads, dual-track for long reads) maximizes viral discovery coverage, with all classification based on RVDB database
 
@@ -291,20 +291,20 @@ Original 13 Diamond columns + 9 taxonomic columns:
 
 ## Key Features
 
-### ✨ Dual-Track Analysis (Long Reads)
+### Dual-Track Analysis (Long Reads)
 
 1. **Parallel Processing**: Both tracks run simultaneously
 2. **Independent Classification**: Reduces method bias
 3. **Automatic Consensus**: Compares results, generates confidence tiers
 4. **Comprehensive Coverage**: Combines feature-based + similarity-based
 
-### 📊 Complete Taxonomic Resolution
+### Complete Taxonomic Resolution
 
 1. **7 taxonomic levels**: Kingdom → Phylum → Class → Order → Family → Genus → Species
 2. **NCBI 2020 viral system**: Updated taxonomy (Bamfordvirae, etc.)
 3. **Protein-level statistics**: Abundance and completeness indicators
 
-### 🎯 Confidence Classification
+### Confidence Classification
 
 **3-tier system**:
 - ★★★ **Consensus** (both methods): Highest confidence, immediate use
@@ -711,21 +711,21 @@ results_long/
 
 ## Advantages
 
-### 🎯 For Researchers
+### For Researchers
 
 1. **Comprehensive viral identification**: Dual methods maximize coverage
 2. **Confidence classification**: 3-tier system guides analysis priority
 3. **Complete taxonomy**: Kingdom → Species for all hits
 4. **Reproducible**: Containerized, version-controlled, documented
 
-### 🔬 For Bioinformaticians
+### For Bioinformaticians
 
 1. **Modular design**: Easy to customize or extend
 2. **Scalable**: SLURM cluster support, parallel processing
 3. **Robust**: Error handling, fallback mechanisms, validation
 4. **Well-documented**: Comprehensive README, inline comments
 
-### 💻 For Facility Managers
+### For Facility Managers
 
 1. **Efficient resource usage**: Optimized CPU/memory allocation
 2. **Queue-aware**: SLURM integration with appropriate time limits
@@ -912,9 +912,9 @@ results_long/
 
 ### What Users Need to Provide
 
-📥 Sequencing data (FASTQ)  
-📥 Database downloads (RVDB, Pfam-A, NCBI Taxonomy)  
-📥 Computational resources (HPC cluster with SLURM)
+Sequencing data (FASTQ)  
+Database downloads (RVDB, Pfam-A, NCBI Taxonomy)  
+Computational resources (HPC cluster with SLURM)
 
 ---
 
@@ -946,7 +946,7 @@ https://github.com/[your-repo]/rvdb-viral-metagenome-nf
 
 ## Key Takeaways
 
-### 🎯 Main Points
+### Main Points
 
 1. **Dual strategies**: Short reads use dual-assembler comparison; Long reads use dual-track analysis
 2. **Complementary coverage**: Each method captures viruses the other misses
@@ -954,7 +954,7 @@ https://github.com/[your-repo]/rvdb-viral-metagenome-nf
 4. **Complete taxonomy**: 7 levels (Kingdom → Species) for comprehensive analysis
 5. **Validated approach**: 100% consensus rate (long reads) demonstrates method reliability
 
-### 💡 Why This Matters
+### Why This Matters
 
 - **Short reads**: Dual assemblers provide robust viral identification through assembler comparison
 - **Long reads**: Dual-track maximizes viral discovery through complementary methods
@@ -1001,9 +1001,9 @@ ls results_long/consensus_analysis/
 
 ### Contact
 
-- 📧 Email: sihua.peng@uga.edu, Workflow code programmer  
-- 📧 Email: justin.bahl@uga.edu, Project supervisor  
-- 💻 Suggestion: [Click here!](https://github.com/pengsihua2023/rvdb-viral-metagenome-nf/issues/new)
+- Email: sihua.peng@uga.edu, Workflow code programmer  
+- Email: justin.bahl@uga.edu, Project supervisor  
+- Suggestion: [Click here!](https://github.com/pengsihua2023/rvdb-viral-metagenome-nf/issues/new)
 
 ### Getting Started
 
@@ -1069,6 +1069,7 @@ sample1,/path/reads.fq.gz
 ```
 
 ---
+
 
 
 
